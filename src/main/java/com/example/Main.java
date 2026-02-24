@@ -7,7 +7,8 @@ public class Main {
 
         Persona persona1 = new Persona(123, "Gabriel", "email@email.com");
 
-        String obtenerSaludo = persona1.hablar("Hola como estas?");
+
+        String obtenerSaludo = persona1.hablar("Hola como estas?" + persona1.correo);
 
         System.out.println(obtenerSaludo);
         System.out.println("Termino!");
