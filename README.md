@@ -72,3 +72,19 @@ Persona <|-- Estudiante : hereda
 
 @enduml
 ```
+
+## Diagrama de Objetos
+
+```mermaid
+graph TB
+    subgraph Instancias["Instancias de Objetos"]
+        P1["Persona<br/>cedula: 1001<br/>nombre: Juan García<br/>correo: juan@example.com<br/>telefono: 3001234567"]
+        
+        D1["Docente<br/>cedula: 2001<br/>nombre: Profesor Carlos<br/>correo: carlos@example.com<br/>telefono: 3007654321<br/>imparteMateria: Matemáticas"]
+        
+        E1["Estudiante<br/>cedula: 3001<br/>nombre: María López<br/>correo: maria@example.com<br/>telefono: 3009876543<br/>estudiaCurso: Ingeniería de Sistemas"]
+    end
+    
+    D1 -->|hereda de| P1
+    E1 -->|hereda de| P1
+```
