@@ -13,7 +13,7 @@ public class Prueba {
         System.out.println("Termino!");
 
         System.out.println("Saludo: " + obtenerSaludo);
-        System.out.println("Persona correo: " + persona2.correo);
+        System.out.println("Persona correo: " + persona2.getCorreo());
 
     }
 }

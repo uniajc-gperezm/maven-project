@@ -2,10 +2,18 @@ package com.example;
 
 public class Estudiante extends Persona {
     
-    public String estudiaCurso;
+    private String estudiaCurso;
 
     public Estudiante() {
         super();
+    }
+    
+    public String getEstudiaCurso() {
+        return estudiaCurso;
+    }
+
+    public void setEstudiaCurso(String estudiaCurso) {
+        this.estudiaCurso = estudiaCurso;
     }
 
     public void entregarTarea(String materia) {

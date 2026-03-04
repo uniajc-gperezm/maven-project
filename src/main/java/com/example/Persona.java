@@ -6,7 +6,7 @@ public class Persona {
     // atributos que identican a una persona
     private int cedula;
     private String nombre;
-    public String correo;
+    private String correo;
     protected int telefono;
 
     // constructor metodo inicial de la clase se ejecuta inmediantamente creemos un objeto o una instancia de la clase.
@@ -24,6 +24,38 @@ public class Persona {
         this.cedula = cedula;
         this.nombre = nombre;
         this.correo = correo;
+    }
+
+    public int getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
     }
 
     // Aqui creamos los metodos que indican las acciones que puede ejecutar o hacer una persona.
