@@ -1,5 +1,8 @@
 package com.example;
 
+import java.time.LocalDate;
+import java.time.Period;
+
 // Esta es la clase molde para crear personas.
 public class Persona {
     
@@ -8,6 +11,7 @@ public class Persona {
     private String nombre;
     private String correo;
     protected int telefono;
+    private LocalDate fechaNacimiento;
 
     // constructor metodo inicial de la clase se ejecuta inmediantamente creemos un objeto o una instancia de la clase.
     public Persona() {
@@ -56,6 +60,21 @@ public class Persona {
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
+    }
+
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public int calcularEdadAnios() {
+        if (this.fechaNacimiento == null) {
+            return 0;
+        }
+        return Period.between(this.fechaNacimiento, LocalDate.now()).getYears();
     }
 
     // Aqui creamos los metodos que indican las acciones que puede ejecutar o hacer una persona.
